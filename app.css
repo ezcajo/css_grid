@@ -58,3 +58,29 @@
       background-color: #666;
       border: medium solid #999;
     }
+    .grid-explicit{
+      /*Comenzamos con la propieada display grid aplicado al contenedor padre*/
+        display: grid;
+      /*definimos la cantidad de columnas y filas con metodologia 1*/
+      /*
+      Filas (row): 5
+      Columnas ( columns): 4
+      */
+        grid-template-rows:20% 20% 20% 20% 20%;
+        grid-template-columns: 25% 25% 25% 25%;
+      /*definimos la cantidad de columnas y filas con metodologia 2*/
+      /*
+      Filas (row): 5 la opcion auto el tamaño se ajustara en base al contenido
+      Columnas ( columns): 4
+      */
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+
+      /*gap row Columns determino el espacio de separacion */
+      column-gap: 10px;
+      row-gap: 20px;
+
+      /*Acortamiento de la opcion gap*/
+
+      gap: 30px 5px;
+    }
